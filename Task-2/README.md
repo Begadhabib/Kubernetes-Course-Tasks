@@ -6,7 +6,8 @@ This document outlines the steps taken to deploy a FastAPI guestbook app backed 
 
 First, I built the two images, loaded them into minikube, and applied the manifests in order (namespace, Secret, ConfigMap, PV/PVC, MySQL, app, Ingress). Below is the screenshot of the pods running successfully:
 
-![alt text](image.png)
+<img width="1861" height="201" alt="image" src="https://github.com/user-attachments/assets/efcf412d-b3e2-4081-953f-eb5ffd6df9b3" />
+
 ## 2. PV and PVC Binding
 
 The PV (`mysql-pv`) is pinned to `minikube-m02` using node affinity, and the PVC (`mysql-pvc`) is bound to it:
