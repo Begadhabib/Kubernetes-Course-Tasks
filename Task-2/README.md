@@ -28,10 +28,14 @@ I used port-forwarding to reach the Ingress Controller on `localhost:8080`.
 
 To verify that the data survives a restart, I first added a new message:
 
-![alt text](screenshots/5.png)
+![Add message](screenshots/3.png)
 
 Then I deleted the MySQL Pod and waited for a new one to start:
 
-![alt text](screenshots/5.png)
+![Delete pod](screenshots/5.png)
+
+After the new MySQL Pod was running, I read the messages again:
+
+![Messages after restart](screenshots/6.png)
 
 The message is still there, so the data was kept on the PersistentVolume.
